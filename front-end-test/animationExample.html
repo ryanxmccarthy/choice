@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <style>
+      .green {
+        background-color: green;
+        height: 50px;
+        width: 50px;
+        transition: all 1s ease-in;
+      }
+
+      .red {
+        background-color: red;
+        height: 400px;
+        width: 500px;
+        transition: all 1s ease-out;
+      }
+
+      .expand .red {
+        height: 100px;
+      }
+
+      .expand .green {
+        height: 500px;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <script>
+      var expand = false;
+      function toggle() {
+        expand = !expand;
+
+        var container = document.getElementById('container');
+
+        container.classList.toggle('expand');
+      }  
+    </script>
+
+    <div id="container">
+      <div class="green"></div>
+      <div class="red"></div>
+    </div>
+
+    <button onclick="toggle()">Click me!</button>
+    
+  </body>
+</html>
