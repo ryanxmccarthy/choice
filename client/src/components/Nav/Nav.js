@@ -1,36 +1,38 @@
 import React from "react";
+import './nav.css'
 
-const Nav = () =>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html"><h1>Choice</h1></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+const Nav = () => (
+  <nav className="navbar navbar-expand-lg navbar-light">
+    <a className="navbar-brand" href="index.html"><h1>Choice</h1></a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav mr-auto">
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="blank" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Go To...
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Your Bands</a>
-            <a class="dropdown-item" href="#">Your Eats</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Map</a>
+          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a className="dropdown-item" href="blank">Your Bands</a>
+            <a className="dropdown-item" href="blank">Your Eats</a>
+            <div className="dropdown-divider"></div>
+            <a className="dropdown-item" href="blank">Map</a>
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <form className="form-inline my-2 my-lg-0">
+        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sign In</a>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a className="nav-link" href="blank">Sign In</a>
         </li>
       </ul>
     </div>
-  </nav>;
+  </nav>
+);
 
 export default Nav;
