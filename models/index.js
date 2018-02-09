@@ -1,3 +1,4 @@
 module.exports = {
-  Article: require("./Article")
+  Concert: require("./Concert"),
+  Restaurant: require('./Restaurant')
 };
