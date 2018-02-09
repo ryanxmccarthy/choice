@@ -21,16 +21,20 @@ export const Nav = () => {
     this.setState({
       [search]: value
     })
+
+    console.log("input change here");
   }
 
   handleFormSubmit = (event) => {
     event.preventDefault();
     alert(`search: ${this.state.search}`);
     this.setState(defaultState)
+    console.log("form submit here");
   }
 
   signIn = () => {
-    modal.css("display", "block");
+    document.getElementById("modal").style.display = "block";
+    console.log("sign in modal");
   }
 
   render () {
