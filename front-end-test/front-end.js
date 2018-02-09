@@ -11,7 +11,5 @@ function toggle() {
 };
 
 function signIn(){
-	var signIn = document.getElementById('signIn');
-	var modal = document.getElementById('modal');
-	modal.css("display", "block");
+	document.getElementById("modal").style.display = "block";
 }
