@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Articles from "./pages/Articles";
+import Choice from "./pages/Choice";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Dashboard from './components/Dashboard'
@@ -11,7 +11,7 @@ const App = () =>
       <Nav />
       <Dashboard />
       <Switch>
-        <Route exact path="/" component={Articles} />
+        <Route exact path="/" component={Choice} />
         <Route component={NoMatch} />
       </Switch>
     </div>

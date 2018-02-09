@@ -7,9 +7,9 @@ concertRouter.route("/concerts")
   .post(concertController.create);
 
 // Matches with "/api/concerts/:id"
-// concertRouter.route("/:id")
-//   .get(concertController.findById)
-//   .put(concertController.update)
-//   .delete(concertController.remove);
+concertRouter.route("/:id")
+  // .get(concertController.findById)
+  // .put(concertController.update)
+  // .delete(concertController.remove);
 
 module.exports = concertRouter;
