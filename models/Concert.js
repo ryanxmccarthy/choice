@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const consertSchema = new Schema({
+const concertSchema = new Schema({
   userID: {
     type: String,
     required: true
@@ -25,7 +25,7 @@ const consertSchema = new Schema({
   },
 });
 
-const Article = mongoose.model("Article", consertSchema);
+const Article = mongoose.model("Article", concertSchema);
 
 module.exports = Article;
 

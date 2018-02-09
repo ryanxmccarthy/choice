@@ -1,5 +1,5 @@
-// const router = require("express").Router();
-// const articlesController = require("../../controllers/articlesController");
+const router = require("express").Router();
+const articlesController = require("../../controllers/articlesController");
 
 // // Matches with "/api/bands"
 // router.route("/")
