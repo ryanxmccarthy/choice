@@ -25,7 +25,7 @@ const concertSchema = new Schema({
   },
 });
 
-const Article = mongoose.model("Article", concertSchema);
+const Concert = mongoose.model("Concert", concertSchema);
 
-module.exports = Article;
+module.exports = Concert;
 
