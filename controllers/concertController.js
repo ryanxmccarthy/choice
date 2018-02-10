@@ -15,6 +15,12 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+  findById: (req, res) => {
+    db.Concert
+      .find(req.params.id)
+      .then(dbModel => res.json(dbModel))
+      .catch(err => res.status(422).json(err));
+  },
   remove: (req, res) => {
     db.Concert
       .findById({ _id: req.params.id })
