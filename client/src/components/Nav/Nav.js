@@ -83,6 +83,16 @@ export default class Example extends React.Component {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <Form>
+              <FormGroup>
+                <Input type="search" 
+                        name="search" 
+                        id="searchBar" 
+                        placeholder="Search"
+                        onChange={this.handleInputChange} />
+              </FormGroup>
+              <Button></Button>
+            </Form>
           </Nav>
         </Collapse>
       </Navbar>
