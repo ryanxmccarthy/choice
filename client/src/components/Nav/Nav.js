@@ -2,15 +2,42 @@ import React from "react";
 import './nav.css';
 import '../Modal/modal.css';
 import "../Modal";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
 const defaultState = {
   state: ""
 }
 
-const Nav = () => {
-  const state = defaultState;
+export default class Example extends React.Component {
+  constructor(props) {
+    super(props);
 
-  const handleInputChange = (event) => {
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+
+  state = defaultState;
+
+  handleInputChange(event) {
     const { name, value } = event.target;
 
     this.setState({
@@ -20,57 +47,46 @@ const Nav = () => {
     console.log("input change here");
   };
 
-  const handleFormSubmit = (event) => {
+  handleFormSubmit(event) {
     event.preventDefault();
     alert(`search: ${this.state.name}`);
     this.setState(defaultState)
     console.log("form submit here");
   };
 
-  const signIn = () => {
+  signIn() {
     document.getElementById("modal").style.display = "block";
     console.log("sign in modal");
   };
-
+  render() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="index.html"><h1>Choice</h1></a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Go To...
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">Your Bands</a>
-                <a className="dropdown-item" href="#">Your Eats</a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">Map</a>
-              </div>
-            </li>
-          </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input type="search" 
-                  // value={this.state.name}
-                  className="form-control mr-sm-2"
-                  onChange={this.handleInputChange}
-                  placeholder="Search" 
-                  aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" onClick={this.handleFormSubmit} type="submit">Search</button>
-          </form>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" 
-                  href="#" id="signUp" 
-                  onClick={this.signIn}>Sign In</a>
-            </li>
-          </ul>
-        </div>
-      </nav>);
+   <div>
+      <Navbar color="faded" light expand="md">
+        <NavbarBrand href="/">Choice</NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Options
+              </DropdownToggle>
+              <DropdownMenu >
+                <DropdownItem>
+                  Your Bands
+                </DropdownItem>
+                <DropdownItem>
+                  Your Eats
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  Dashboard
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+    )
+  }
 }
-
-export default Nav;
