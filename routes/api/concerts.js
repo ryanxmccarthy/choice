@@ -8,8 +8,8 @@ concertRouter.route("/concerts")
 
 // Matches with "/api/concerts/:id"
 concertRouter.route("/:id")
-  // .get(concertController.findById)
+  .get(concertController.findById)
   // .put(concertController.update)
-  // .delete(concertController.remove);
+  .delete(concertController.remove);
 
 module.exports = concertRouter;

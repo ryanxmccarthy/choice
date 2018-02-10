@@ -1,17 +1,19 @@
 import axios from "axios";
 
 export default {
-  // Gets all books
-  getBands: () => {
-    return axios.get("/api/bands");
+  // Gets all bands
+  getConcerts: () => {
+    return axios.get("/api/concerts");
   },
-  // Deletes the book with the given id
-  deleteBand: (id) => {
-    return axios.delete("/api/band/" + id);
+  // Deletes the concert with the given id
+  deleteConcert: (id) => {
+    return axios.delete("/api/concert/" + id);
   },
-  getRestaurant: () => {
+  // Gets all restaurants
+  getRestaurants: () => {
     return axios.get("/api/restaurants");
   },
+  // Deletes the restaurant with the given id
   deleteRestaurant: (id) => {
     return axios.get("/api/restaurant/" + id);
   }
