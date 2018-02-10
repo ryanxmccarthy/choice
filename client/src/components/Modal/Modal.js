@@ -18,7 +18,7 @@ const defaultState = {
 	search: ""
 }
 
-export const Modal = () => {
+const Modal = () => {
 	const state = defaultState;
 
 	const handleInputChange = (event) => {
@@ -52,7 +52,7 @@ export const Modal = () => {
 	                <label for="exampleInputEmail1">Email address</label>
 	                <input type="email" 
 	                			className="form-control" 
-	                			value={this.state.email}
+	                			// value={this.state.email}
 	                			id="exampleInputEmail1" 
 	                			aria-describedby="emailHelp" 
 	                			onChange={this.handleInputChange}
@@ -62,7 +62,7 @@ export const Modal = () => {
 	                <label for="exampleInputPassword1">Password</label>
 	                <input type="password" 
 	                			className="form-control" 
-	                			value={this.state.body}
+	                			// value={this.state.body}
 	                			id="exampleInputPassword1"
 	                			onChange={this.handleInputChange} 
 	                			placeholder="Password" />

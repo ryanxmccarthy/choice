@@ -7,7 +7,7 @@ const defaultState = {
   state: ""
 }
 
-export const Nav = () => {
+const Nav = () => {
   const state = defaultState;
 
   const handleInputChange = (event) => {
@@ -55,7 +55,7 @@ export const Nav = () => {
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input type="search" 
-                  value={this.state.search}
+                  // value={this.state.name}
                   className="form-control mr-sm-2"
                   onChange={this.handleInputChange}
                   placeholder="Search" 
@@ -72,3 +72,5 @@ export const Nav = () => {
         </div>
       </nav>);
 }
+
+export default Nav;
