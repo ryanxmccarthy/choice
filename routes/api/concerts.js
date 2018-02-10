@@ -10,6 +10,6 @@ concertRouter.route("/concerts")
 concertRouter.route("/:id")
   .get(concertController.findById)
   // .put(concertController.update)
-  // .delete(concertController.remove);
+  .delete(concertController.remove);
 
 module.exports = concertRouter;
