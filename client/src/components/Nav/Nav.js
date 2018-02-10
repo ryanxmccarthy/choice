@@ -1,44 +1,38 @@
 import React from "react";
 import './nav.css';
 import '../Modal/modal.css';
-
-var signIn = document.getElementById('signIn');
-
-signIn.onclick( function() {
-  modal.css("display", "block");
-});
+import "../Modal";
 
 const defaultState = {
-  search: ""
+  state: ""
 }
 
 export const Nav = () => {
-  state = defaultState;
+  const state = defaultState;
 
-  handleInputChange = (event) => {
-    const { search, value } = event.target;
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
 
     this.setState({
-      [search]: value
+      [name]: value
     })
 
     console.log("input change here");
-  }
+  };
 
-  handleFormSubmit = (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
-    alert(`search: ${this.state.search}`);
+    alert(`search: ${this.state.name}`);
     this.setState(defaultState)
     console.log("form submit here");
-  }
+  };
 
-  signIn = () => {
+  const signIn = () => {
     document.getElementById("modal").style.display = "block";
     console.log("sign in modal");
-  }
+  };
 
-  render () {
-    return(
+  return (
     <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="index.html"><h1>Choice</h1></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,16 +59,16 @@ export const Nav = () => {
                   className="form-control mr-sm-2"
                   onChange={this.handleInputChange}
                   placeholder="Search" 
-                  aria-label="Search">
+                  aria-label="Search" />
             <button className="btn btn-outline-success my-2 my-sm-0" onClick={this.handleFormSubmit} type="submit">Search</button>
           </form>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#" id="signUp" onClick={this.signIn}>Sign In</a>
+              <a className="nav-link" 
+                  href="#" id="signUp" 
+                  onClick={this.signIn}>Sign In</a>
             </li>
           </ul>
         </div>
-      </nav>;
-    )
-  }
+      </nav>);
 }
