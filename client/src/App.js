@@ -4,13 +4,12 @@ import Choice from "./pages/Choice";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Dashboard from './components/Dashboard'
-import Saved from "./components/Saved"
 
 const App = () =>
   <Router>
     <div>
       <Nav />
-      <Saved />
+      <Dashboard />
       <Switch>
         <Route exact path="/" component={Choice} />
         <Route component={NoMatch} />

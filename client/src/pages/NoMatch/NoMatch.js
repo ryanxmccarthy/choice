@@ -1,6 +1,8 @@
 import React from "react";
 
 const NoMatch = () =>
-  <h1>404 BRUH</h1>
+  <html>
+    <h1>404 Page Not Found</h1>
+  </html>
 
 export default NoMatch;
