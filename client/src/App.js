@@ -10,7 +10,6 @@ const App = () =>
   <Router>
     <div>
       <Nav />
-      <Dashboard />
       <Saved />
       <Switch>
         <Route exact path="/" component={Choice} />

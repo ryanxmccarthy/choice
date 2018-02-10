@@ -9,7 +9,7 @@ restaurantRouter.route("/restaurants")
 // Matches with "/api/restaurants/:id"
 restaurantRouter.route("/:id")
   .get(restaurantController.findById)
-  // .put(restaurantController.update)
+  .put(restaurantController.update)
   .delete(restaurantController.remove);
 
 module.exports = restaurantRouter;
