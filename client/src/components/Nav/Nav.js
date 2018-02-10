@@ -3,7 +3,11 @@ import './nav.css';
 import '../Modal/modal.css';
 import "../Modal";
 import {
+  Button,
   Collapse,
+  Form,
+  FormGroup,
+  Input,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -65,34 +69,41 @@ export default class Example extends React.Component {
         <NavbarBrand href="/">Choice</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu >
-                <DropdownItem>
-                  Your Bands
-                </DropdownItem>
-                <DropdownItem>
-                  Your Eats
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
+          <Nav navbar>
+            <NavItem>
+              <UncontrolledDropdown className="dropdown" nav inNavbar>
+                <DropdownToggle nav caret>
                   Dashboard
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            <Form>
-              <FormGroup>
-                <Input type="search" 
-                        name="search" 
-                        id="searchBar" 
-                        placeholder="Search"
-                        onChange={this.handleInputChange} />
-              </FormGroup>
-              <Button></Button>
-            </Form>
+                </DropdownToggle>
+                <DropdownMenu >
+                  <DropdownItem>
+                    Your Bands
+                  </DropdownItem>
+                  <DropdownItem>
+                    Your Eats
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </NavItem>
+            <NavItem>
+              <Form className="search">
+                <FormGroup>
+                  <Input type="search" 
+                          name="search" 
+                          id="searchBar" 
+                          placeholder="Search"
+                          onChange={this.handleInputChange} />
+                </FormGroup>
+                <FormGroup>
+                  <Button color="success"
+                          type="">Search</Button>
+                </FormGroup>
+                <FormGroup>
+                  <Button color="link" 
+                          onClick={this.signIn}>Sign In</Button>
+                </FormGroup>
+              </Form>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
