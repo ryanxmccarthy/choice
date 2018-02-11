@@ -3,13 +3,16 @@ import './nav.css';
 import '../Modal/modal.css';
 import "../Modal";
 import {
+  Button,
   Collapse,
+  Form,
+  FormGroup,
+  Input,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -19,7 +22,7 @@ const defaultState = {
   state: ""
 }
 
-export default class Example extends React.Component {
+export default class Navi extends React.Component {
   constructor(props) {
     super(props);
 
@@ -54,39 +57,59 @@ export default class Example extends React.Component {
     console.log("form submit here");
   };
 
-  signIn() {
-    document.getElementById("modal").style.display = "block";
-    console.log("sign in modal");
-  };
+  getInitialState() {
+    return { showModal: false };
+  }
+
+  navSignIn(){
+    document.getElementById('modalBox').style.display = "block";
+    document.getElementById('modal').style.display = "block";
+    console.log("Nav sign in");
+  }
+
   render() {
-  return (
-   <div>
-      <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/">Choice</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu >
-                <DropdownItem>
-                  Your Bands
-                </DropdownItem>
-                <DropdownItem>
-                  Your Eats
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Dashboard
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+    return (
+     <div>
+        <Navbar color="faded" light expand="md">
+          <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <UncontrolledDropdown className="dropdown" nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Dashboard
+                  </DropdownToggle>
+                  <DropdownMenu >
+                    <DropdownItem href="/bands">
+                      Your Bands
+                    </DropdownItem>
+                    <DropdownItem href="/eats">
+                      Your Eats
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </NavItem>
+              <NavItem>
+                <Form inline className="search">
+                  <FormGroup>
+                    <Input type="search" 
+                            name="search" 
+                            id="searchBar" 
+                            placeholder="Search"
+                            onChange={this.handleInputChange} />
+                  </FormGroup>
+                  <Button color="success"
+                          id="searchBtn"
+                          className="search">Search</Button>
+                  <Button color="link" 
+                          onClick={this.navSignIn}>Sign In</Button>
+                </Form>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     )
   }
 }
