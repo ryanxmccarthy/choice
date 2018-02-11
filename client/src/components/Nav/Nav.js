@@ -23,7 +23,7 @@ const defaultState = {
   state: ""
 }
 
-export default class Example extends React.Component {
+export default class Navi extends React.Component {
   constructor(props) {
     super(props);
 
@@ -63,51 +63,48 @@ export default class Example extends React.Component {
     console.log("sign in modal");
   };
   render() {
-  return (
-   <div>
-      <Navbar color="faded" light expand="md">
-        <NavbarBrand href="/">Choice</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav navbar>
-            <NavItem>
-              <UncontrolledDropdown className="dropdown" nav inNavbar>
-                <DropdownToggle nav caret>
-                  Dashboard
-                </DropdownToggle>
-                <DropdownMenu >
-                  <DropdownItem>
-                    Your Bands
-                  </DropdownItem>
-                  <DropdownItem>
-                    Your Eats
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </NavItem>
-            <NavItem>
-              <Form className="search">
-                <FormGroup>
-                  <Input type="search" 
-                          name="search" 
-                          id="searchBar" 
-                          placeholder="Search"
-                          onChange={this.handleInputChange} />
-                </FormGroup>
-                <FormGroup>
+    return (
+     <div>
+        <Navbar color="faded" light expand="md">
+          <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <UncontrolledDropdown className="dropdown" nav inNavbar>
+                  <DropdownToggle nav caret>
+                    Dashboard
+                  </DropdownToggle>
+                  <DropdownMenu >
+                    <DropdownItem href="/bands">
+                      Your Bands
+                    </DropdownItem>
+                    <DropdownItem href="/eats">
+                      Your Eats
+                    </DropdownItem>
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </NavItem>
+              <NavItem>
+                <Form inline className="search">
+                  <FormGroup>
+                    <Input type="search" 
+                            name="search" 
+                            id="searchBar" 
+                            placeholder="Search"
+                            onChange={this.handleInputChange} />
+                  </FormGroup>
                   <Button color="success"
-                          type="">Search</Button>
-                </FormGroup>
-                <FormGroup>
+                          id="searchBtn"
+                          className="search">Search</Button>
                   <Button color="link" 
                           onClick={this.signIn}>Sign In</Button>
-                </FormGroup>
-              </Form>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
+                </Form>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     )
   }
 }

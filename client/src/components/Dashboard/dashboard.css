@@ -25,16 +25,14 @@ p{
 
 #bands{
 	position:relative;
-	width: 50%;
-	background-color: papayawhip;
-	padding-top:10px;
-	padding-bottom:10px;
+	width:100%;
+	padding:1% 3%;
 	transition: all 1s ease-out;
 }
 
 #map{
 	position:relative;
-	width:50%;
+	width:100%;
  	background-color: plum;
  	padding-top:10px;
 	padding-bottom:15px;
@@ -43,19 +41,17 @@ p{
 
 #eats{
 	position:relative;
-	background-color: pink;
-	padding-top:10px;
-	padding-bottom:15px;
+	width:100%;
+	padding:1% 3%;
 	transition: all 1s ease-out;
 }
 
 .grid-item{
 	position:relative;
-	width:100px;
-	height:100px;
-	margin:0 0 5px 5px;
+	width:15%;
+	margin:5px;
 	float:left;
-	background-color:magenta;
+	background:none;
 	transition: all 1s ease-out;
 }
 

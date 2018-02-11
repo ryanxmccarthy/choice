@@ -7,7 +7,7 @@ const Saved = () =>
           <div className="col">
             <div className="card-columns">
               <div className="card">
-                <img className="card-img-top" src="https://cdn.baeblemusic.com/images/bblog/1-16-2017/allstarsmashmouthblog-580.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://cdn.baeblemusic.com/images/bblog/1-16-2017/allstarsmashmouthblog-580.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Smash Mouth</h5>
                   <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -15,7 +15,7 @@ const Saved = () =>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="https://image.redbull.com/rbcom/010/2015-09-03/1331745288284_2/0010/1/1600/1067/1/grimes.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://image.redbull.com/rbcom/010/2015-09-03/1331745288284_2/0010/1/1600/1067/1/grimes.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Grimes</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -23,7 +23,7 @@ const Saved = () =>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="https://cdn3.whatculture.com/images/2015/03/peter-dinklage-bolivar-trask-600x400.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://cdn3.whatculture.com/images/2015/03/peter-dinklage-bolivar-trask-600x400.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Peter Dinklage</h5>
                   <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -31,7 +31,7 @@ const Saved = () =>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="https://cdn.baeblemusic.com/images/bblog/1-16-2017/allstarsmashmouthblog-580.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://cdn.baeblemusic.com/images/bblog/1-16-2017/allstarsmashmouthblog-580.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Smash Mouth</h5>
                   <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -39,7 +39,7 @@ const Saved = () =>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="https://image.redbull.com/rbcom/010/2015-09-03/1331745288284_2/0010/1/1600/1067/1/grimes.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://image.redbull.com/rbcom/010/2015-09-03/1331745288284_2/0010/1/1600/1067/1/grimes.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Grimes</h5>
                   <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -47,7 +47,7 @@ const Saved = () =>
                 </div>
               </div>
               <div className="card">
-                <img className="card-img-top" src="https://cdn3.whatculture.com/images/2015/03/peter-dinklage-bolivar-trask-600x400.jpg" alt="Card image cap" />
+                <img className="card-img-top" src="https://cdn3.whatculture.com/images/2015/03/peter-dinklage-bolivar-trask-600x400.jpg" />
                 <div className="card-body">
                   <h5 className="card-title">Peter Dinklage</h5>
                   <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
