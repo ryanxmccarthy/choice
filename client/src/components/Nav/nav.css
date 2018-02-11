@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Shrikhand');
 
-html, h1, h2, h3, a, p {
+html, h2, h3, a, p {
 	font-family: Open Sans, sans-serif;
 }
 
@@ -15,7 +15,7 @@ h2{
 	font-size: 1.8em;
 }
 
-h3{
+h3, h4, h5{
 	font-size:1.2em;
 	font-weight:800;
 }

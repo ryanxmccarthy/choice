@@ -55,18 +55,10 @@ p{
 	transition: all 1s ease-out;
 }
 
-.toggle{
-	position:relative;
+.imgOverlay{
+	background-color:rgba(0, 0, 0, 0.4);
 }
 
-.expand #bands{
-	width:25%;
-}
-
-.expand #map{
-	width:75%;
-}
-
-.expand #eats{
-
+#maps img{
+	width:100%;
 }

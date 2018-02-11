@@ -13,7 +13,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -58,10 +57,16 @@ export default class Navi extends React.Component {
     console.log("form submit here");
   };
 
-  signIn() {
-    document.getElementById("modal").style.display = "block";
-    console.log("sign in modal");
-  };
+  getInitialState() {
+    return { showModal: false };
+  }
+
+  navSignIn(){
+    document.getElementById('modalBox').style.display = "block";
+    document.getElementById('modal').style.display = "block";
+    console.log("Nav sign in");
+  }
+
   render() {
     return (
      <div>
@@ -98,7 +103,7 @@ export default class Navi extends React.Component {
                           id="searchBtn"
                           className="search">Search</Button>
                   <Button color="link" 
-                          onClick={this.signIn}>Sign In</Button>
+                          onClick={this.navSignIn}>Sign In</Button>
                 </Form>
               </NavItem>
             </Nav>
