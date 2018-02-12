@@ -3,7 +3,6 @@ import API from "../../utils/API";
 import { Link } from "react-router-dom";
 import Navi from "../../components/Nav";
 import Modal from "../../components/Modal";
-import Dashboard from '../../components/Dashboard';
 import Footer from "../../components/Footer";
 import { Jumbotron, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
@@ -15,7 +14,7 @@ export default class SignUp extends React.Component {
         <Modal />
 				<div className="container-fluid">
           <Jumbotron>
-            <h1 className="display-3">Hello there!</h1>
+            <h2 className="display-3">Hello there!</h2>
             <p className="lead">We're happy you like our app. Create an account below to personalize your content.</p>
             <hr className="my-2" />
             <FormGroup>
