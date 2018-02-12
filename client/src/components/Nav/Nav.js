@@ -39,8 +39,8 @@ export default class Navi extends React.Component {
   };
 
   navSignIn = () => {
-    document.getElementById('modalBox').style.display = "block";
     document.getElementById('modal').style.display = "block";
+    document.getElementById('modal-dialog').style.display = "block";
     console.log("Nav sign in");
   };
 
@@ -79,11 +79,11 @@ export default class Navi extends React.Component {
   render() {
     return (
       <div>
-        <div className='container2'>
+        {/*<div className='container2'>
           <div className='container1'>
             {this.state.pictures}
           </div>
-        </div>
+        </div>*/}
 
         <div>
           <Navbar color="faded" light expand="md">

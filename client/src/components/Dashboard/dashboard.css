@@ -30,10 +30,9 @@ p{
 	transition: all 1s ease-out;
 }
 
-#map{
+.map{
 	position:relative;
 	width:100%;
- 	background-color: plum;
  	padding-top:10px;
 	padding-bottom:15px;
 	transition: all 1s ease-out;
@@ -66,12 +65,7 @@ p{
 	background-color:rgba(0, 0, 0, 0);
 }
 
-img.card-img{
-	position:relative;
-	transition: all 0.3s ease;
-}
 
-
-#maps img{
+.map img{
 	width:100%;
 }
