@@ -8,25 +8,25 @@ function hash(password) {
 module.exports = {
   create: (req, res) => {
     let userData = {
-      username: req.body.username,
       email: req.body.email,
       password: hash(req.body.password)
     };
-    db.User
-      .create(userData (err, user) => {
-        if(err) {
-          return err;
-        } else {
-          return res.redirect('/');
-        }
-      })
+    db.createUser(userData, (err, response) => {
+      if (err) {
+        console.log(err)
+      } else {
+        res.send(response);
+      }
+    })
   },
   remove: (req, res) => {
-    db.User
-      .findById({ _id: req.params.id })
-      .then(dbModel => dbModel.remove())
-      .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+    db.User.deleteUser(req.uid, (err, response) => {
+      if (err) {
+        console.log(err);
+      } else {
+        return response;
+      }
+    })
   },
   startSession: (req, res) => {
     db.User.findOne({ email: email })
