@@ -28,16 +28,14 @@ export default class Navi extends React.Component {
 
   handleInputChange = (event) => {
     const { name, value }= event.target;
-
     this.setState({ [name]: value });
-
     console.log("search input change");
   };
 
   handleFormSubmit = (event) => {
     event.preventDefault();
     console.log(`search: ${this.state.search}`);
-    this.setState(defaultState)
+    this.setState(defaultState);
   };
 
   navSignIn(){

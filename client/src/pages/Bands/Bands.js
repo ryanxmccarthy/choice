@@ -6,14 +6,7 @@ import Modal from "../../components/Modal";
 import Dashboard from '../../components/Dashboard';
 import Footer from "../../components/Footer";
 
-export default class Choice extends React.Component {
-  state = {
-    articles: [],
-    title: "",
-    author: "",
-    synopsis: ""
-  };
-
+export default class Bands extends React.Component {
   render() {
     return (
       <section>
