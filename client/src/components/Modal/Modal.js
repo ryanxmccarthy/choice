@@ -2,30 +2,23 @@ import React from "react";
 import "./modal.css";
 
 const defaultState = {
-	email: " ",
-	pass: " ",
+	email: "",
+	pass: "",
 }
 
 export default class Dashboard extends React.Component{
 	state = defaultState;
 
 	handleInputChange = (event) => {
-		const { name, value } = event.target;
-
-		this.setState({
-			[name]: value
-		})
+		const { name, value }= event.target;
+		this.setState({ [name]: value });
+		console.log("modal input change");
 	}
 
 	handleFormSubmit = (event) => {
-		event.prevenDefault();
-		alert(`email: ${this.state.email} and pass: ${this.state.pass}`);
-
-		this.setState(defaultState)
-	}
-
-	modalSignIn = () => {
-		console.log("Modal sign in");
+		event.preventDefault();
+		console.log(`email: ${this.state.email} and pass: ${this.state.pass}`);
+		this.setState(defaultState);
 	}
 
 	closeBtn = () => {
@@ -53,7 +46,7 @@ export default class Dashboard extends React.Component{
 		      <div className="modal-dialog" role="document">
 		        <div className="modal-content">
 		          <div className="modal-header">
-		            <h5 className="modal-title">Modal title</h5>
+		            <h2 className="modal-title">Sign In</h2>
 		            <button type="button" 
 		            				className="close" 
 		            				id="modalClose" 
@@ -69,17 +62,17 @@ export default class Dashboard extends React.Component{
 		                <label for="exampleInputEmail1">Email address</label>
 		                <input type="email" 
 		                			className="form-control" 
-		                			// value={this.state.email}
+		                			name="email"
 		                			id="exampleInputEmail1" 
 		                			aria-describedby="emailHelp" 
 		                			onChange={this.handleInputChange}
-		                			placeholder="Enter email" />
+		                			placeholder="example@example.com" />
 		              </div>
 		              <div className="form-group">
 		                <label for="exampleInputPassword1">Password</label>
 		                <input type="password" 
 		                			className="form-control" 
-		                			value={this.state.pass}
+		                			name="pass"
 		                			id="exampleInputPassword1"
 		                			onChange={this.handleInputChange} 
 		                			placeholder="Password" />
@@ -92,7 +85,7 @@ export default class Dashboard extends React.Component{
 		            <button type="button" 
 		            				className="btn btn-primary" 
 		            				data-dismiss="modal"
-		            				onClick={this.signInBtn}>Sign In</button>
+		            				onClick={this.handleFormSubmit}>Sign In</button>
 		          </div>
 		        </div>
 		      </div>

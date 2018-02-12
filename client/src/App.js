@@ -1,21 +1,24 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Choice from "./pages/Choice";
 import NoMatch from "./pages/NoMatch";
-import Navi from "./components/Nav";
-import Modal from "./components/Modal"
-import Dashboard from './components/Dashboard'
-import Saved from "./components/Saved"
-import Footer from "./components/Footer"
+import Bands from "./pages/Bands";
+import Eats from "./pages/Eats";
+import SignUp from "./pages/SignUp";
 
-const App = () =>
-  <Router> 
-    <div>
-    	<Modal />
-      <Navi />
-      <Dashboard />
-      <Footer />
-    </div>
-  </Router>
+class App extends Component {
+	render() {
+		return (
+		  <Router> 
+		  	<div>
+		      <Route path="/" exact component={Choice} />
+		      <Route path="/bands" exact component={Bands} />
+		      <Route path="/eats" exact component={Eats} />
+		      <Route path="/signUp" exact component={SignUp} />
+		    </div>
+		  </Router>
+  	);
+	}
+}
 
 export default App;
