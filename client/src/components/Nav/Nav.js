@@ -38,24 +38,33 @@ export default class Navi extends React.Component {
     this.setState(defaultState);
   };
 
-  navSignIn(){
+  navSignIn = () => {
     document.getElementById('modalBox').style.display = "block";
     document.getElementById('modal').style.display = "block";
     console.log("Nav sign in");
-  }
+  };
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
     this.state = {
-      events: [],
+      isOpen: false
     };
   }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
 
-  componentDidMount() {
+  state = { events: [] };
+
+  componentDidMount = () => {
     fetch('https://rest.bandsintown.com/artists/watain/events?app_id=lost&ffound')
     .then(results => {
       return results.json();
-      console.log(results.json())
+      console.log(results.json());
     }).then(data => {
       console.log(data)
     //   let events = data.results.map(event => {
@@ -65,11 +74,11 @@ export default class Navi extends React.Component {
     //   this.setState({events: events});
     //   console.log('state', this.state.events);
     })
-  }
+  };
 
   render() {
     return (
-      <div className='nav'>
+      <div>
         <div className='container2'>
           <div className='container1'>
             {this.state.pictures}
@@ -119,6 +128,6 @@ export default class Navi extends React.Component {
           </Navbar>
         </div>
       </div>
-    )
+    );
   }
 }
