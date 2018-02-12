@@ -3,7 +3,7 @@ const session = require('express-session')
 const mongoSession = require('connect-mongodb-session')(session);
 
 const store = new mongoSession({
-    uri: 'mongodb://localhost:3000/choiceData',
+    uri: 'mongodb://localhost:27017/choiceData' || process.env.MONGO_URI,
     collection: 'choiceData'
   },
   error => {
