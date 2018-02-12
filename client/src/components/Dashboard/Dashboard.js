@@ -9,42 +9,42 @@ export default class Dashboard extends React.Component{
     	<div className="container-fluid" id="toggleDiv">
         <div className="row">
           <div id="bands">
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/bands/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
@@ -55,49 +55,49 @@ export default class Dashboard extends React.Component{
         </div>
 
         <div className="row">
-          <div id="maps">
-            <img src="https://developers.google.com/maps/documentation/urls/images/map-no-params.png" alt=" " />
+          <div className='map'>
+            <img alt="" src="https://www.wired.com/wp-content/uploads/2016/11/GoogleMap-1-1200x630-e1479510841629.jpg" />
           </div>
         </div>
         
         <div className="row">
           <div id="eats">
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
-            <a href="/eats"><Card inverse className="grid-item">
+            <a href="/eats/details"><Card inverse className="grid-item">
               <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
