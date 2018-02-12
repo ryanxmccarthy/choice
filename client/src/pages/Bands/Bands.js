@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navi from "../../components/Nav";
 import Modal from "../../components/Modal";
 import Dashboard from '../../components/Dashboard';
+import Saved from "../../components/Saved";
 import Footer from "../../components/Footer";
 
 export default class Bands extends React.Component {
@@ -12,7 +13,7 @@ export default class Bands extends React.Component {
       <section>
         <Navi />
         <Modal />
-        <Dashboard />
+				<Saved />
         <Footer />
       </section>
     );

@@ -71,9 +71,6 @@ img.card-img{
 	transition: all 0.3s ease;
 }
 
-img.card-img:hover {
-	transform: scale(1.2, 1.2);
-}
 
 #maps img{
 	width:100%;
