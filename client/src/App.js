@@ -11,8 +11,8 @@ import Footer from "./components/Footer"
 const App = () =>
   <Router> 
     <div>
+    	<Modal />
       <Navi />
-      <Modal />
       <Dashboard />
       <Footer />
     </div>
