@@ -5,7 +5,6 @@ import NoMatch from "./pages/NoMatch";
 import Bands from "./pages/Bands";
 import Eats from "./pages/Eats";
 import SignUp from "./pages/SignUp";
-import Background from './components/Background'
 
 class App extends Component {
 	render() {
@@ -16,6 +15,7 @@ class App extends Component {
 		      <Route path="/bands" exact component={Bands} />
 		      <Route path="/eats" exact component={Eats} />
 		      <Route path="/signUp" exact component={SignUp} />
+		      <Route exact component={NoMatch} />
 		    </div>
 		  </Router>
   	);
