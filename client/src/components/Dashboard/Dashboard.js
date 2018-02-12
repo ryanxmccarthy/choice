@@ -10,42 +10,42 @@ export default class Dashboard extends React.Component{
         <div className="row">
           <div id="bands">
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
@@ -63,42 +63,42 @@ export default class Dashboard extends React.Component{
         <div className="row">
           <div id="eats">
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>
               </CardImgOverlay>
             </Card></a>
             <a href="/eats"><Card inverse className="grid-item">
-              <CardImg width="100%" src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
+              <CardImg src="https://threecheers.co.uk/assets/Latchmere-battersea-food-4-318x270.jpg" alt="Card image cap" />
               <CardImgOverlay className="imgOverlay">
                 <CardTitle>Name</CardTitle>
                 <CardText>Content</CardText>

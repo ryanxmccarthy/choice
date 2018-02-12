@@ -19,47 +19,26 @@ import {
   DropdownItem } from 'reactstrap';
 
 const defaultState = {
-  state: ""
+  search: ''
 }
 
 export default class Navi extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
 
   state = defaultState;
 
-  handleInputChange(event) {
-    const { name, value } = event.target;
+  handleInputChange = (event) => {
+    const { name, value }= event.target;
 
-    this.setState({
-      [name]: value
-    })
+    this.setState({ [name]: value });
 
-    console.log("input change here");
+    console.log("search input change");
   };
 
-  handleFormSubmit(event) {
+  handleFormSubmit = (event) => {
     event.preventDefault();
-    alert(`search: ${this.state.name}`);
+    console.log(`search: ${this.state.search}`);
     this.setState(defaultState)
-    console.log("form submit here");
   };
-
-  getInitialState() {
-    return { showModal: false };
-  }
 
   navSignIn(){
     document.getElementById('modalBox').style.display = "block";
@@ -101,7 +80,8 @@ export default class Navi extends React.Component {
                   </FormGroup>
                   <Button color="success"
                           id="searchBtn"
-                          className="search">Search</Button>
+                          className="search"
+                          onClick={this.handleFormSubmit}>Search</Button>
                   <Button color="link" 
                           onClick={this.navSignIn}>Sign In</Button>
                 </Form>

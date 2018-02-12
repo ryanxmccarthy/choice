@@ -24,12 +24,7 @@ export default class Dashboard extends React.Component{
 		this.setState(defaultState)
 	}
 
-	getInitialState() {
-		return { showModal: false };
-	}
-
 	modalSignIn = () => {
-		document.getElementById('modalBox').style.display = "none";
 		console.log("Modal sign in");
 	}
 
@@ -41,10 +36,10 @@ export default class Dashboard extends React.Component{
 
 	windowClose = (event) => {
 		if (event.target === document.getElementById('modalBox')) {
-			document.getElementById('modalBox').style.display = 'none';
-			document.getElementById('modal').style.display = 'none';
-		}		
-		console.log("Window close");
+			document.getElementById('modalBox').style.display = "none";
+			document.getElementById('modal').style.display = "none";
+			console.log("Window close");
+		}
 	}
 
 	render() {
