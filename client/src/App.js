@@ -5,6 +5,7 @@ import NoMatch from "./pages/NoMatch";
 import Bands from "./pages/Bands";
 import Eats from "./pages/Eats";
 import SignUp from "./pages/SignUp";
+import Background from './components/Background'
 
 class App extends Component {
 	render() {
