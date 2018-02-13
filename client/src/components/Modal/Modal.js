@@ -22,25 +22,22 @@ export default class Dashboard extends React.Component{
 	}
 
 	closeBtn = () => {
+		document.getElementById('modalBox').style.display = "none";
 		document.getElementById('modal').style.display = "none";
 		document.getElementById('modal-dialog').style.display = "none";
 		console.log("Modal close btn");
 	}
 
-	windowClose = (event) => {
-		if (event.target === document.getElementById('modal')) {
-			document.getElementById('modal-dialog').style.display = "none";
-			document.getElementById('modal').style.display = "none";
-			console.log("Window close");
-		}
-	}
-
 	render() {
 		return(
-		 	<div className="modal" id="modal"
+		 	<div className="modal"
 		 			id="modal" 
 		 			tabIndex="-1" 
 		 			role="dialog">
+		 		<div id="modalBox" 
+		 				 className="modalBox"
+		 				 onClick={this.closeBtn}>
+	 			</div>
 	      <div className="modal-dialog" id="modal-dialog" role="document">
 	        <div className="modal-content">
 	          <div className="modal-header">

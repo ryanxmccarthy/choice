@@ -26,18 +26,18 @@ export default class Choice extends React.Component {
       //   )
       // })
 
-      console.log(data)
+      console.log(data);
 
-      this.setState({ events: events })
-    })
+      this.setState({ events: events });
+    });
   }
 
-  handleInputChange = event => {
+  handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   }
 
-  handleFormSubmit = event => {
+  handleFormSubmit = (event) => {
     event.preventDefault();
     this.search();
   }
