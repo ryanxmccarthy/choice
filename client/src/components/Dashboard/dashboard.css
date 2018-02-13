@@ -47,24 +47,13 @@ p{
 
 .grid-item{
 	position:relative;
-	width:15%;
+	width:30%;
 	margin:5px;
 	float:left;
 	background:none;
 	overflow:hidden;
 	transition: all 1s ease;
 }
-
-.imgOverlay{
-	color:white;
-	background-color:rgba(0, 0, 0, 0.4);
-	transition: 0.3s ease;
-}
-
-.imgOverlay:hover {
-	background-color:rgba(0, 0, 0, 0);
-}
-
 
 .map img{
 	width:100%;
