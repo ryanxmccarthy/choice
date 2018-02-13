@@ -2,7 +2,11 @@ import React from "react";
 import "./dashboard.css";
 import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
 
-export default class Dashboard extends React.Component{
+export default class Dashboard extends React.Component {
+  state = {
+    search: '',
+    events: [],
+  }
 
   render() {
     return(
