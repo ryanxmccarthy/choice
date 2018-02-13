@@ -37,7 +37,7 @@ export default class Dashboard extends React.Component{
 
 	render() {
 		return(
-		 	<div className="modal" id="modal"
+		 	<div className="modal"
 		 			id="modal" 
 		 			tabIndex="-1" 
 		 			role="dialog">
