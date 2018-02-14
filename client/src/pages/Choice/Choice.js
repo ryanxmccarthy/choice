@@ -49,7 +49,7 @@ export default class Choice extends React.Component {
           <Navi search={this.search} input={this.handleInputChange} form={this.handleFormSubmit} />
           <Modal />
           <Dashboard state={this.state} search={this.search} input={this.handleInputChange} form={this.handleFormSubmit} />
-          <Footer />
+          {/*<Footer />*/}
         </section>
       </div>
     );
