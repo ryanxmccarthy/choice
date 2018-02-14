@@ -10,8 +10,6 @@ export default class Choice extends React.Component {
   state = {
     search: '',
     events: [],
-    lat: 0,
-    lon: 0,
     city: '',
     restaurants: [],
   }
@@ -34,14 +32,12 @@ export default class Choice extends React.Component {
 
       this.setState({ 
         events: events,
-        lat: precisionRound(data[6].venue.latitude, 2),
-        lon: precisionRound(data[6].venue.longitude, 2),
-        city: data[6].venue.city,
+        city: data[0].venue.city,
       })    
     })
   }
 
-  returnRestaurants = (lat, lon) => {
+  returnRestaurants = () => {
     request({
       url: 'https://api.foursquare.com/v2/venues/explore',
       method: 'GET',

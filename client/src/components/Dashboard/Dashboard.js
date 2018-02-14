@@ -2,11 +2,24 @@ import React from "react";
 import "./dashboard.css";
 import { Card, CardSubtitle, CardTitle, CardText } from 'reactstrap';
 import Moment from "react-moment";
+import {
+  Button,
+  Collapse,
+  Form,
+  FormGroup,
+  Input,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink } from 'reactstrap';
 
 export default class Dashboard extends React.Component {
   state = {
     search: '',
     events: [],
+    city: '',
     restaurants: [],
   }
 
@@ -17,7 +30,7 @@ export default class Dashboard extends React.Component {
             <div id="bands">
               <div id='results'>
                 { this.props.state.events.map(event => (
-                  <a href={event.url} 
+                  <a href='javascript:;' 
                      target="_blank"                    
                      key={event.id}
                      onClick={this.props.eat}>
@@ -38,6 +51,9 @@ export default class Dashboard extends React.Component {
         </div>
 
         <hr />
+
+        <center><NavbarBrand><h1>Popular Restaurants</h1></NavbarBrand></center>
+
         <hr />
         
         <div className="row">
