@@ -26,7 +26,7 @@ p{
 #bands{
 	position:relative;
 	width:100%;
-	padding:1% 3%;
+	padding:1%;
 	transition: all 1s ease-out;
 }
 
@@ -47,24 +47,14 @@ p{
 
 .grid-item{
 	position:relative;
-	width:15%;
+	width:30%;
 	margin:5px;
+	padding:8px;
 	float:left;
 	background:none;
 	overflow:hidden;
 	transition: all 1s ease;
 }
-
-.imgOverlay{
-	color:white;
-	background-color:rgba(0, 0, 0, 0.4);
-	transition: 0.3s ease;
-}
-
-.imgOverlay:hover {
-	background-color:rgba(0, 0, 0, 0);
-}
-
 
 .map img{
 	width:100%;

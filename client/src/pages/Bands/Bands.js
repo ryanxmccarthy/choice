@@ -23,7 +23,7 @@ export default class Bands extends React.Component {
 			          <div className="card">
 			            <img className="card-img-top" alt="" src="https://cdn.baeblemusic.com/images/bblog/1-16-2017/allstarsmashmouthblog-580.jpg" />
 			            <div className="card-body">
-			              <a href="#" onClick={this.getArtistName}><h5 className="card-title" id="artistName">Smash Mouth</h5></a>
+			              <a href="/bands/details"><h5 className="card-title" id="artistName">Smash Mouth</h5></a>
 			              <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 			              <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
 			            </div>

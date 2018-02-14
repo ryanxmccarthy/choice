@@ -29,6 +29,10 @@ nav, .navbar, .navbar-nav{
 	background-color:white;
 }
 
-.search{
+#searchBtn{
 	margin-left:8px;
+}
+
+.signIn{
+	padding-left:0;
 }
