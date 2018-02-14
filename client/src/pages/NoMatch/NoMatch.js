@@ -3,7 +3,7 @@ import "./erroneous.css";
 
 const NoMatch = () =>
 <div className="error">
-  <h1>404 BRUH</h1>
+  <h1 className='fourohfour'>404 BRUH</h1>
   <div className="row">
 	  <img className="fyrus" src="https://vignette.wikia.nocookie.net/zelda/images/7/7b/Fyrus.png/revision/latest?cb=20090513005920" alt="404 BRUH!!" />
 	  <img className="fyrus2" src="https://vignette.wikia.nocookie.net/zelda/images/7/7b/Fyrus.png/revision/latest?cb=20090513005920" alt="404 BRUH!!" />
