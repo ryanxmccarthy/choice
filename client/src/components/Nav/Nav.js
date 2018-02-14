@@ -13,10 +13,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 const defaultState = {
   search: '',
@@ -30,6 +27,7 @@ export default class Navi extends React.Component {
   navSignIn = () => {
     document.getElementById('modal-dialog').style.display = "block";
     document.getElementById('modal').style.display = "block";
+    document.getElementById('modalBox').style.display = "block";
     console.log("Nav sign in");
   };
 
@@ -54,23 +52,11 @@ export default class Navi extends React.Component {
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state} navbar>
+          <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <UncontrolledDropdown className="dropdown">
-                  <DropdownToggle nav caret>
-                    Dashboard
-                  </DropdownToggle>
-                  <DropdownMenu >
-                    <DropdownItem href="/bands">
-                      Your Bands
-                    </DropdownItem>
-                    <DropdownItem href="/eats">
-                      Your Eats
-                    </DropdownItem>
-                  </DropdownMenu>
-                </UncontrolledDropdown>
-              </NavItem>
+              <NavLink href="/">Dashboard</NavLink>
+              <NavLink href="/bands">Your Bands</NavLink>
+              <NavLink href="/eats">Your Eats</NavLink>
               <NavItem>
                 <Form inline className="search">
                   <FormGroup>
@@ -84,9 +70,12 @@ export default class Navi extends React.Component {
                           id="searchBtn"
                           className="search"
                           onClick={this.props.form}>Search</Button>
-                  <Button color="link" 
-                          onClick={this.navSignIn}>Sign In</Button>
                 </Form>
+              </NavItem>
+              <NavItem>
+                <Button color="link"
+                        className="signIn" 
+                        onClick={this.navSignIn}>Sign In</Button>
               </NavItem>
             </Nav>
           </Collapse>

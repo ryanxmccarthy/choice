@@ -1,6 +1,6 @@
 import React from "react";
 import "./dashboard.css";
-import { Card, CardSubtitle, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import { Card, CardSubtitle, CardTitle, CardText } from 'reactstrap';
 import Moment from "react-moment";
 
 export default class Dashboard extends React.Component {
@@ -8,8 +8,6 @@ export default class Dashboard extends React.Component {
     search: '',
     events: [],
   }
-
-
 
   render() {
     return(
