@@ -26,19 +26,22 @@ export default class Navi extends React.Component {
 
   navSignIn = () => {
     document.getElementById('modal-dialog').style.display = "block";
+<<<<<<< HEAD
     document.getElementById('modal').style.display = "block";
+=======
+>>>>>>> master
     document.getElementById('modalBox').style.display = "block";
     console.log("Nav sign in");
   };
 
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: true
     };
   }
+
   toggle() {
     this.setState({
       isOpen: !this.state.isOpen
@@ -47,13 +50,17 @@ export default class Navi extends React.Component {
 
   render() {
     return (
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
       <div>
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+<<<<<<< HEAD
               <NavLink href="/">Dashboard</NavLink>
               <NavLink href="/bands">Your Bands</NavLink>
               <NavLink href="/eats">Your Eats</NavLink>
@@ -77,6 +84,40 @@ export default class Navi extends React.Component {
                         className="signIn" 
                         onClick={this.navSignIn}>Sign In</Button>
               </NavItem>
+=======
+              <UncontrolledDropdown nav="true" innavbar="true">
+                <DropdownToggle nav caret>
+                  Dashboard
+                </DropdownToggle>
+                <DropdownMenu >
+                  <DropdownItem>
+                    Your Bands
+                  </DropdownItem>
+                  <DropdownItem>
+                    Your Eats
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+              <Form inline className="search">
+                <FormGroup>
+                  <Input type="search" 
+                          name="search" 
+                          id="searchBar" 
+                          placeholder="Search for a musician"
+                          onChange={this.props.input} />
+                </FormGroup>
+                <Button color="success"
+                        id="searchBtn"
+                        className="search"
+                        onClick={this.props.form}>Search</Button>
+                <Button color="link" 
+                        onClick={this.navSignIn}>Sign In</Button>
+              </Form>
+>>>>>>> master
             </Nav>
           </Collapse>
         </Navbar>

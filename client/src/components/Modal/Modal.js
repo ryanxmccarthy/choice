@@ -22,6 +22,7 @@ export default class Modal extends React.Component{
 	}
 
 	closeBtn = () => {
+		document.getElementById('modalBox').style.display = "none";
 		document.getElementById('modal').style.display = "none";
 		document.getElementById('modal-dialog').style.display = "none";
 		document.getElementById('modalBox').style.display = "none";
@@ -34,7 +35,10 @@ export default class Modal extends React.Component{
 		 			id="modal" 
 		 			tabIndex="-1" 
 		 			role="dialog">
-		 		<div className="modalBox" id="modalBox" onClick={this.closeBtn}></div>
+		 		<div id="modalBox" 
+		 				 className="modalBox"
+		 				 onClick={this.closeBtn}>
+	 			</div>
 	      <div className="modal-dialog" id="modal-dialog" role="document">
 	        <div className="modal-content">
 	          <div className="modal-header">

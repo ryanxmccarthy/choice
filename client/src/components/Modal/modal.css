@@ -25,7 +25,7 @@ p{
 	margin:0;
 }
 
-.modalBox{
+#modalBox{
   position: absolute;
   margin:0;
 	width:100%;
