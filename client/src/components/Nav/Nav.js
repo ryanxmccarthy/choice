@@ -27,6 +27,7 @@ export default class Navi extends React.Component {
   navSignIn = () => {
     document.getElementById('modal-dialog').style.display = "block";
     document.getElementById('modalBox').style.display = "block";
+    document.getElementById('modal').style.display = "block";
     console.log("Nav sign in");
   };
 

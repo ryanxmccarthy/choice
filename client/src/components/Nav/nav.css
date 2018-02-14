@@ -36,3 +36,9 @@ nav, .navbar, .navbar-nav{
 .signIn{
 	padding-left:0;
 }
+
+.navbar-toggler{
+	position:relative;
+	float:left;
+	align-items:left;
+}

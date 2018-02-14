@@ -38,9 +38,6 @@ a{
 .map{
 	position:relative;
 	width:100%;
- 	padding-top:10px;
-	padding-bottom:15px;
-	transition: all 1s ease-out;
 }
 
 #eats{
@@ -61,6 +58,6 @@ a{
 	transition: all 1s ease;
 }
 
-.map img{
+#map img{
 	width:100%;
 }
