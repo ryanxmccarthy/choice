@@ -26,7 +26,6 @@ export default class Navi extends React.Component {
 
   navSignIn = () => {
     document.getElementById('modal-dialog').style.display = "block";
-    document.getElementById('modal').style.display = "block";
     document.getElementById('modalBox').style.display = "block";
     console.log("Nav sign in");
   };
@@ -47,7 +46,6 @@ export default class Navi extends React.Component {
 
   render() {
     return (
-
       <div>
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>

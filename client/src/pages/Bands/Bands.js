@@ -7,10 +7,6 @@ import Footer from "../../components/Footer";
 
 export default class Bands extends React.Component {
 
-	getArtistName() {
-		console.log(document.getElementById('artistName'));
-	}
-
   render() {
     return (
       <section>
