@@ -25,7 +25,6 @@ export default class Modal extends React.Component{
 		document.getElementById('modalBox').style.display = "none";
 		document.getElementById('modal').style.display = "none";
 		document.getElementById('modal-dialog').style.display = "none";
-		document.getElementById('modalBox').style.display = "none";
 		console.log("Modal close btn");
 	}
 
