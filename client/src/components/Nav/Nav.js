@@ -47,7 +47,6 @@ export default class Navi extends React.Component {
 
   render() {
     return (
-
       <div>
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/"><h1>Choice</h1></NavbarBrand>

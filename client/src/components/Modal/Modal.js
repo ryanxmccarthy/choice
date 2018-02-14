@@ -71,7 +71,7 @@ export default class Modal extends React.Component{
 	            </form>
 	          </div>
 	          <div className="modal-footer">
-	            <a href="/signUp" 
+	            <a href="/signUp"
 	            	 id="signUp">Sign Up Here!</a>
 	            <button type="button" 
 	            				className="btn btn-primary" 
