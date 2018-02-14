@@ -25,6 +25,8 @@ export default class Choice extends React.Component {
     }).then(data => {
       let events = data;
 
+      console.log(data)
+
       function precisionRound(number, precision) {
         let factor = Math.pow(10, precision);
         return Math.round(number * factor) / factor;
@@ -64,18 +66,12 @@ export default class Choice extends React.Component {
         for (var i = 0; i < response.length; i++) {
           var card = document.createElement('div');
 
-          card.className = 'row';
-
-          console.log(response[i])
-
           card.innerHTML = 
             '<a href="' + response[i].venue.url + '" target="_blank">\
-              <Card className="grid-item">\
-                <CardTitle>' + response[i].venue.name + '</CardTitle>\
-                <CardSubtitle>' + response[i].venue.location.address + '</CardSubtitle>\
-                <CardText>' + response[i].venue.categories[0].name + '| Rating/10 </CardText>\
-              </Card>\
-            </a>';
+              <div class="grid-item card">\
+                <h5 class="card-title">' + response[i].venue.name + '</h5>\
+                <h6 class="card-subtitle">' + response[i].venue.location.address + '</h6>\
+                <p class="card-text">' + response[i].venue.categories[0].name + '</p></div></a>';
 
           document.getElementById('eats').appendChild(card);
         }
