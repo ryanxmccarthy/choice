@@ -1,10 +1,10 @@
 import React from "react";
-import API from "../../utils/API";
-import { Link } from "react-router-dom";
+// import API from "../../utils/API";
+// import { Link } from "react-router-dom";
 import Navi from "../../components/Nav";
 import Modal from "../../components/Modal";
 import Footer from "../../components/Footer";
-import { Jumbotron, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Jumbotron, Button, FormGroup, Label, Input } from 'reactstrap';
 
 export default class SignUp extends React.Component {
   render() {

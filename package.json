@@ -6,7 +6,7 @@
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "start": "concurrently \"node server.js\" \"yarn run client\"",
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,7 +24,6 @@
     "connect-mongo": "^2.0.1",
     "express": "^4.15.4",
     "express-session": "^1.15.6",
-    "google-maps-react": "^1.1.2",
     "moment": "^2.20.1",
     "mongoose": "^4.11.7",
     "react": "^16.2.0",
@@ -32,6 +31,7 @@
     "react-moment": "^0.7.0",
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.2.1",
-    "reactstrap": "^5.0.0-beta"
+    "reactstrap": "^5.0.0-beta",
+    "request": "^2.83.0"
   }
 }
