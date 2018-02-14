@@ -11,7 +11,7 @@ export default class Dashboard extends React.Component {
 
   render() {
     return(
-    	<div className="container-fluid" id="toggleDiv">
+    	<div className="container-fluid">
         <div className="row">
           <div id="bands">
             <div id='results'>
@@ -30,8 +30,8 @@ export default class Dashboard extends React.Component {
         </div>
 
         <div className="row">
-          <div className='map'>
-            <img alt="" src="https://www.wired.com/wp-content/uploads/2016/11/GoogleMap-1-1200x630-e1479510841629.jpg" />
+          <div id="map">
+            <img src="https://developers.google.com/maps/documentation/urls/images/map-no-params.png" alt=" " />
           </div>
         </div>
         
