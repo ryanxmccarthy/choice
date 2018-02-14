@@ -1,0 +1,61 @@
+h1{
+	position:absolute;
+	font-size:15em;
+	left:0;
+	right:0;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	color: magenta;
+	text-align:center;
+	margin-top:15px;
+}
+
+.error{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-image:url('https://media.giphy.com/media/Xw9PFeWGudoVq/giphy.gif');
+	background-repeat:repeat-y repeat-x;
+}
+
+.row{
+	height:50%;
+	width:100%;
+}
+
+.fyrus{
+	position:relative;
+	width:30%;
+	float:left;
+	margin-left:20%;
+}
+
+.fyrus2{
+	position:relative;
+	width:30%;
+	float:left;
+	-moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.chitties{
+	width:20%;
+	float:left;
+}
+
+.rip{
+	position:absolute;
+	height:20%;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.riperoni{
+	position:relative;
+	float:left;
+	width:10%;
+	height:;
+	z-index:5;
+}

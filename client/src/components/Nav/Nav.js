@@ -2,6 +2,7 @@ import React from "react";
 import './nav.css';
 import '../Modal/modal.css';
 import "../Modal";
+import "../../pages/Choice";
 import {
   Button,
   Collapse,
@@ -45,6 +46,13 @@ export default class Navi extends React.Component {
     });
   }
 
+  // enterSearch(event) {
+  //   if (event.keyCode === 13) {
+  //     event.preventDefault();
+  //     event.stopPropagation();
+  //   }
+  // }
+
   render() {
     return (
       <div>
@@ -59,15 +67,17 @@ export default class Navi extends React.Component {
               <NavItem>
                 <Form inline className="search">
                   <FormGroup>
-                    <Input type="search" 
-                            name="search" 
-                            id="searchBar" 
-                            placeholder="Search"
-                            onChange={this.props.input} />
+                    <Input
+                          onKeyDown={this.enterSearch}
+                          name="search" 
+                          id="searchBar" 
+                          placeholder="Search for a musician"
+                          onChange={this.props.input} />
                   </FormGroup>
                   <Button color="success"
                           id="searchBtn"
                           className="search"
+                          type="submit"
                           onClick={this.props.form}>Search</Button>
                 </Form>
               </NavItem>
