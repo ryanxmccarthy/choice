@@ -18,6 +18,7 @@ import {
 const defaultState = {
   search: '',
   events: [],
+  restaurants: [],
 }
 
 export default class Navi extends React.Component {
