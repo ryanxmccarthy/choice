@@ -3,6 +3,7 @@ import Navi from "../../components/Nav";
 import Modal from "../../components/Modal";
 import Dashboard from '../../components/Dashboard';
 import Footer from "../../components/Footer";
+import { Card, CardSubtitle, CardTitle, CardText } from 'reactstrap';
 const request = require('request');
 
 export default class Choice extends React.Component {
@@ -11,6 +12,7 @@ export default class Choice extends React.Component {
     events: [],
     lat: 0,
     lon: 0,
+    city: '',
     restaurants: [],
   }
 
@@ -30,8 +32,9 @@ export default class Choice extends React.Component {
 
       this.setState({ 
         events: events,
-        lat: precisionRound(data[0].venue.latitude, 2),
-        lon: precisionRound(data[0].venue.longitude, 2)
+        lat: precisionRound(data[6].venue.latitude, 2),
+        lon: precisionRound(data[6].venue.longitude, 2),
+        city: data[6].venue.city,
       })    
     })
   }
@@ -43,16 +46,39 @@ export default class Choice extends React.Component {
       qs: {
         client_id: '3WY24I05XQZA3TMIM3UTLH2TE5GGYJXT4USO53KF4SUPXC0E',
         client_secret: '2FGY4DTK3UILLPPPRJ1VVO5HNULVJPYEY01EISXZ5CECFBDH',
-        ll: this.state.lat + ',' + this.state.lon,
+        near: this.state.city,
+        radius: '1000',
         query: 'restaurant',
         v: '20170801',
-        limit: 1
+        limit: 6
       }
-    }, function(err, res, body) {
+    }, 
+    function(err, res, body) {
       if (err) {
         console.error(err);
       } else {
-        console.log(body);
+        var response = JSON.parse(body).response.groups[0].items;
+
+        document.getElementById('eats').innerHTML = '';
+
+        for (var i = 0; i < response.length; i++) {
+          var card = document.createElement('div');
+
+          card.className = 'row';
+
+          console.log(response[i])
+
+          card.innerHTML = 
+            '<a href="' + response[i].venue.url + '" target="_blank">\
+              <Card className="grid-item">\
+                <CardTitle>' + response[i].venue.name + '</CardTitle>\
+                <CardSubtitle>' + response[i].venue.location.address + '</CardSubtitle>\
+                <CardText>' + response[i].venue.categories[0].name + '| Rating/10 </CardText>\
+              </Card>\
+            </a>';
+
+          document.getElementById('eats').appendChild(card);
+        }
       }
     });
 

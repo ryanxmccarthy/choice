@@ -17,7 +17,7 @@ export default class Dashboard extends React.Component {
             <div id="bands">
               <div id='results'>
                 { this.props.state.events.map(event => (
-                  <a href='javascript:;'
+                  <a href='#'
                      key={event.id}
                      onClick={this.props.eat}>
                     <Card className="grid-item">
@@ -30,23 +30,22 @@ export default class Dashboard extends React.Component {
               </div>
             </div>
           </div>
-        }
-      
+{/*      
         <div className="row">
           <div id="map">
             <img src="https://developers.google.com/maps/documentation/urls/images/map-no-params.png" alt=" " />
           </div>
-        </div>
+        </div>*/}
         
         <div className="row">
           <div id="eats">
-            <a href="eats">  
+            {/*<a href="eats">  
               <Card className="grid-item">
                 <CardTitle>Restaurant</CardTitle>
                 <CardSubtitle>Address</CardSubtitle>
                 <CardText>Food Type | Rating/10 </CardText>
               </Card>
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>
