@@ -33,5 +33,5 @@
     "react-transition-group": "^2.2.1",
     "reactstrap": "^5.0.0-beta",
     "request": "^2.83.0"
-  },
+  }
 }
