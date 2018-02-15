@@ -34,7 +34,7 @@ nav, .navbar, .navbar-nav{
 }
 
 .signIn{
-	padding-left:0;
+	margin-left:8px;
 }
 
 .navbar-toggler{
