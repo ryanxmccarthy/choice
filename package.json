@@ -34,8 +34,4 @@
     "reactstrap": "^5.0.0-beta",
     "request": "^2.83.0"
   },
-  "engines": {
-    "node": "5.0.0",
-    "npm": "4.6.1"
-  },
 }
